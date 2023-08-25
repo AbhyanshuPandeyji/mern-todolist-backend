@@ -7,8 +7,10 @@ dotenv.config();
 
 // to take anything from dotenv file - you need to use process.env.(DB_USERNAME - what parameters you putted in)
 // rember these are variables you need to put it into a string so for that use back tics in your url
-const USERNAME = process.env.DB_USERNAME;
-const PASSWORD = process.env.DB_PASSWORD; 
+// const USERNAME = process.env.DB_USERNAME;
+// const PASSWORD = process.env.DB_PASSWORD; 
+const USERNAME = "abhy";
+const PASSWORD = "todolist"; 
 
 
 
