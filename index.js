@@ -29,7 +29,7 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // when your route is just 
-app.use('https://mern-todolist-deploy.onrender.com/' , Routes)
+app.use('https://mern-todolist-2tro.onrender.com/' , Routes)
 
 // there will be routing here for the initial state of the action to be get
 
