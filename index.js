@@ -5,6 +5,8 @@ import cors from 'cors'
 import Connected from "./database/db.js";
 import Routes from "./routes/route.js"
 import bodyParser from 'body-parser';
+import path from "path"
+
 
 
 
@@ -31,7 +33,11 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // when your route is just 
 // from a render upload site
 // app.use('/', express.static('/build'))
-app.use('/' , Routes)
+app.use('/api' , Routes)
+app.use(express.static(path.join(__dirname , "./client/build")))
+app.get("*" ,  function(req,res){
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+})
 
 // there will be routing here for the initial state of the action to be get
 
