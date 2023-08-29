@@ -14,8 +14,10 @@ const app = express();
 
 
 const corsOptions = {
-    origin : "https://mern-todolist-2tro.onrender.com"
+    // origin : "https://mern-todolist-2tro.onrender.com"
+    origin : "https://mern-todolist-deploy.onrender.com/"
 }
+
 // making connection between front end and backend with different port numbers
 app.use(express.json())
 app.use(cors(corsOptions));
