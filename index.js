@@ -30,13 +30,13 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // when your route is just 
 // from a render upload site
-app.use('/', express.static('/build'))
+// app.use('/', express.static('/build'))
 app.use('/' , Routes)
 
 // there will be routing here for the initial state of the action to be get
 
 
-const PORT = "https://mern-todolist-2tro.onrender.com" || 8000; 
+const PORT = 8000; 
  
 // imorting from the db file for making connection form our local server to the mogodb backend
 Connected();
