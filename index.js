@@ -34,10 +34,10 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // from a render upload site
 // app.use('/', express.static('/build'))
 app.use('/api' , Routes)
-app.use(express.static(path.join(__dirname , "./client/build")))
-app.get("*" ,  function(req,res){
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
-})
+// app.use(express.static(path.join(__dirname , "./client/build")))
+// app.get("*" ,  function(req,res){
+//     res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// })
 
 // there will be routing here for the initial state of the action to be get
 
