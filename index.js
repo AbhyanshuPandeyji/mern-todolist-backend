@@ -36,11 +36,11 @@ app.use('/' , Routes)
 // there will be routing here for the initial state of the action to be get
 
 
-const PORT = 8000; 
+const PORT = "https://mern-todolist-2tro.onrender.com" || 8000; 
  
 // imorting from the db file for making connection form our local server to the mogodb backend
 Connected();
 
 
-app.listen( "https://mern-todolist-2tro.onrender.com" || PORT , ()=> {console.log(`server is Running on Port ${PORT}`);});
+app.listen( PORT , ()=> {console.log(`server is Running on Port ${PORT}`);});
  
